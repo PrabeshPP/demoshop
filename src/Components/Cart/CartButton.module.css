@@ -1,0 +1,47 @@
+.button{
+    min-height: 5vh;
+    width: 12vw;
+    background-color: crimson;
+    border: 1px solid white;
+    border-radius:20px;
+    margin:2vh ;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 100%;
+    display: flex;
+    justify-content: space-around;
+   
+    
+    
+    
+}
+
+.button:hover{
+    background-color: purple;
+    
+}
+
+.button:active{
+    background-color: purple;
+    
+}
+
+.cartIcon{
+    height: 1.35rem;
+    width: 1.35rem;
+    color: rgb(34, 224, 81);
+    margin-top: 1vh;
+}
+
+.text{
+    margin: 0.5vh;
+}
+
+
+
+
+
+
