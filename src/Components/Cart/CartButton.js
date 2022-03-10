@@ -7,8 +7,7 @@ const CartButton=()=>{
     <span className={classes.cartIcon}>
     <CartIcon/>
     </span>
-        <span className={classes.text}>Cart</span>
-    <span>5</span>
+    <span className={classes.badge}>5</span>
        </button>)
  
 }

@@ -1,20 +1,17 @@
 .button{
     min-height: 5vh;
-    width: 12vw;
+    width: 6vw;
     background-color: crimson;
     border: 1px solid white;
     border-radius:20px;
     margin:2vh ;
+    margin-right: 3vw;
     cursor: pointer;
     color: white;
     text-align: center;
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
-    font-size: 100%;
     display: flex;
-    justify-content: space-around;
-   
-    
     
     
 }
@@ -33,11 +30,28 @@
     height: 1.35rem;
     width: 1.35rem;
     color: rgb(34, 224, 81);
-    margin-top: 1vh;
+    position: relative;
+    top: 1vh;
+    left: 1.8vw;
+    
 }
 
 .text{
     margin: 0.5vh;
+}
+
+.badge{
+    height: 3.7vh;
+    width: 1.9vw;
+    border-radius: 50%;
+    background-color: orange;
+    font-size: 2.4vh;
+    text-align: center;
+    position: relative;
+    bottom: 2vh;
+    left: 2vw;
+    shape-outside: circle();
+
 }
 
 

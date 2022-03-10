@@ -1,8 +1,10 @@
 .header{
     width: 100vw;
-    height: 10vh;
+    height:10vh;
     background-image: linear-gradient(to bottom,#001A3C,#633BF3);
     box-shadow: 0 4px 8px rgb(49, 49, 49);
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    z-index:10;
 }
