@@ -1,0 +1,9 @@
+.header-Name{
+    height: 5vh;
+    display: inline-block;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    margin-top:2vh ;
+    margin-left: 1vw;
+}
