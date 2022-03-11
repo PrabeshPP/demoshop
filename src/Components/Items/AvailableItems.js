@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./AvailableItems.module.css";
 import Card from "../UI/Card";
-import CartIcon from "../Cart/CartIcon";
+
 
 
 
