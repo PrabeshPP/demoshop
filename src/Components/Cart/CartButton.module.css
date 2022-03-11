@@ -13,7 +13,6 @@
     font-weight: bold;
     display: flex;
     
-    
 }
 
 .button:hover{
@@ -51,7 +50,6 @@
     bottom: 2vh;
     left: 2vw;
     shape-outside: circle();
-
 }
 
 

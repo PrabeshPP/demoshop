@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./AvailableItems.module.css";
 import Card from "../UI/Card";
+import CartIcon from "../Cart/CartIcon";
 
 
 
@@ -76,7 +77,17 @@ const Items=[
 
 const AvailableItems=()=>{
     const ItemList=Items.map((item)=>{
-   return <Card><li key={item.id}>{item.name}</li></Card>
+   return <Card>
+            <img src={item.image}  alt={item.name}/>
+            <div className={classes["div-name"]}>
+                <span>{item.name}</span>
+            </div><div className={classes["div-price"]}><span>${item.price}</span></div>
+            <div className={classes["div-button"]}>
+            <button className={classes.buttonBuy}>Buy</button>
+               <button className={classes.buttonAdd}>Add To Cart</button>
+            </div>
+            
+        </Card>
        
     })
     
