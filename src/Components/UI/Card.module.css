@@ -1,0 +1,11 @@
+.card{
+    background-color: crimson;
+    border-radius: 16px;
+    min-height: 45vh;
+    min-width: 25vw;
+    display: inline-block;
+    margin-top: 1vh;
+    margin-right:1vh;
+    
+
+}

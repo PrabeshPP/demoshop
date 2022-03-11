@@ -4,7 +4,7 @@ import AvailableItems from "./Components/Items/AvailableItems";
 function App() {
   return (
    <div>
-   {/* <Header/> */}
+   <Header/>
    <AvailableItems/>
 
    </div>

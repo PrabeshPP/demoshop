@@ -1,5 +1,8 @@
 import React from "react";
 import classes from "./AvailableItems.module.css";
+import Card from "../UI/Card";
+
+
 
 const Items=[
     {
@@ -73,15 +76,17 @@ const Items=[
 
 const AvailableItems=()=>{
     const ItemList=Items.map((item)=>{
-   return <li>{item.name}</li>
+   return <Card><li key={item.id}>{item.name}</li></Card>
        
     })
     
     return (
-      <section>
-          <ul>
+      <section className={classes.section}>
+         
+         <ul className={classes.ul}>
         {ItemList}
         </ul>
+         
       </section>
     );
 }
