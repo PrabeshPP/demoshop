@@ -1,6 +1,6 @@
 # A Demo Shop.
  This is Just a demo website to Practice ReactJS and CSS .
  
- <img src="https://github.com/PrabeshPP/demoshop/blob/master/Sc/Sc1.jpg" width="250" height="400">
+ <img src="https://github.com/PrabeshPP/demoshop/blob/master/Sc/Sc1.jpg" width="400" height="400">
 
 
