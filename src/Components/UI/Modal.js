@@ -1,5 +1,8 @@
 import React from "react";
-import classes from "./Modal.module.css"
+import classes from "./Modal.module.css";
+import ReactDom from 'react-dom';
+
+
 
 const BackDrop=(props)=>{
     return <div className={classes.backdrop} onClick={props.onDismiss} ></div>
@@ -14,10 +17,13 @@ const CartModal=(props)=>{
     </div>
 }
 
+
+
+const portalElem=document.getElementById('div1');
 const Modal=(props)=>{
     return <React.Fragment>
-        <BackDrop onDismiss={props.onDismiss}/>
-        <CartModal onDismiss={props.onDismiss}>{props.children}</CartModal>
+        {ReactDom.createPortal(<BackDrop/>,portalElem)}
+        {ReactDom.createPortal(<CartModal onDismiss={props.onDismiss}>{props.children}</CartModal>,portalElem)}
     </React.Fragment>
 }
 
