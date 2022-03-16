@@ -77,7 +77,7 @@ const Items=[
 
 const AvailableItems=()=>{
     const ItemList=Items.map((item)=>{
-   return <Card>
+   return <Card key={item.id}>
             <img src={item.image}  alt={item.name}/>
             <div className={classes["div-name"]}>
                 <span>{item.name}</span>

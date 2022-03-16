@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import Header from "./Components/Header/Header";
-import AvailableItems from "./Components/Items/AvailableItems";
+import Meal from "./Components/Items/Meal";
 import Cart from "./Components/Cart/Cart";
 
 
@@ -19,7 +19,7 @@ function App() {
    <div>
    {cartShow && <Cart onDismiss={dismissCartHandler}/>}
    <Header onShow={showCartHandler}/>
-   <AvailableItems/>
+   <Meal/>
 
    </div>
   );
