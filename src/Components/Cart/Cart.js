@@ -9,7 +9,7 @@ const Cart=(props)=>{
     <div className={classes.footer}>
     <div className={classes.total}>
         <span>Total Amount :</span>
-        <span>2</span>
+        <span>$2</span>
         </div>
         <div className={classes.actions}>
         <button>Proceed</button>
