@@ -1,7 +1,9 @@
 import React,{useState} from "react";
 import Header from "./Components/Header/Header";
 import AvailableItems from "./Components/Items/AvailableItems";
-import Modal from "./Components/UI/Modal";
+import Cart from "./Components/Cart/Cart";
+
+
 function App() {
   const[cartShow,setCartShown]=useState(false);
 
@@ -15,7 +17,7 @@ function App() {
 
   return (
    <div>
-   {cartShow && <Modal/>}
+   {cartShow && <Cart onDismiss={dismissCartHandler}/>}
    <Header onShow={showCartHandler}/>
    <AvailableItems/>
 
