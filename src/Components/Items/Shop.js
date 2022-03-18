@@ -2,10 +2,10 @@ import React from "react";
 import AvailableItems from "./AvailableItems";
 
 
-const Meal=()=>{
+const Shop=()=>{
     return <React.Fragment>
         <AvailableItems/>
     </React.Fragment>
 }
 
-export default Meal;
+export default Shop;

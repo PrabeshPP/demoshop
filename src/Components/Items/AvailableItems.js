@@ -1,6 +1,8 @@
-import React from "react";
+import React,{useContext,useState} from "react";
 import classes from "./AvailableItems.module.css";
 import Card from "../UI/Card";
+import CartContext from "../../Store/Cart-context";
+
 
 
 
@@ -75,8 +77,33 @@ const Items=[
 
 
 
+
+
 const AvailableItems=()=>{
+    const cartCtx=useContext(CartContext);
+
+    const[added,setIsAdded]=useState(false);
+
     const ItemList=Items.map((item)=>{
+        const addItemHandler=()=>{
+            
+            cartCtx.addItem(
+                {
+                    id:item.id,
+                    name:item.name,
+                    price:item.price,
+                    description:item.desc,
+                   
+                }
+            )
+        
+            
+        }
+
+        
+
+
+
    return <Card key={item.id}>
             <img src={item.image}  alt={item.name}/>
             <div className={classes["div-name"]}>
@@ -84,13 +111,13 @@ const AvailableItems=()=>{
             </div><div className={classes["div-price"]}><span>${item.price}</span></div>
             <div className={classes["div-button"]}>
             <button className={classes.buttonBuy}>Buy</button>
-               <button className={classes.buttonAdd}>Add To Cart</button>
+               {added?<button className={classes.buttonAdd}>Remove</button> :<button className={classes.buttonAdd} onClick={addItemHandler} >Add To Cart</button>}
             </div>
             
         </Card>
        
     })
-    
+   
     return (
       <section className={classes.section}>
          
