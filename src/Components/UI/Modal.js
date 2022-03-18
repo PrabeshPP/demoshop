@@ -22,7 +22,7 @@ const CartModal=(props)=>{
 const portalElem=document.getElementById('div1');
 const Modal=(props)=>{
     return <React.Fragment>
-        {ReactDom.createPortal(<BackDrop/>,portalElem)}
+        {ReactDom.createPortal(<BackDrop onDismiss={props.onDismiss}/>,portalElem)}
         {ReactDom.createPortal(<CartModal onDismiss={props.onDismiss}>{props.children}</CartModal>,portalElem)}
     </React.Fragment>
 }
