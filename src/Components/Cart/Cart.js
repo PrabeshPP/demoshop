@@ -5,9 +5,12 @@ import classes from "./Cart.module.css";
 
 const Cart=(props)=>{
     const cartCtx=useContext(CartContext);
-   
+    
     const totalAmount=cartCtx.totalAmount.toFixed(2);
+    
+    const item=cartCtx.items;
     return <Modal onDismiss={props.onDismiss}>
+    <div key={item.id}>{item.name}</div>
 
     <div className={classes.footer}>
     <div className={classes.total}>
